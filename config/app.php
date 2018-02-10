@@ -176,6 +176,7 @@ return [
         // Shop\Providers\BroadcastServiceProvider::class,
         Shop\Providers\EventServiceProvider::class,
         Shop\Providers\RouteServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class
 
     ],
 
