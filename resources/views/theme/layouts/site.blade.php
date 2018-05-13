@@ -123,6 +123,9 @@
 
         <!-- START SLIDER -->
         @yield('sliders')
+        <div>
+            @yield('categories')
+        </div>
         <!-- START PRIMARY -->
         <div id="primary" class="sidebar-right">
             <div class="inner group">

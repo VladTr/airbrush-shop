@@ -3,6 +3,7 @@
 namespace Shop\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Shop\Repositories\CategoriesRepository;
 use Shop\Repositories\MenusRepository;
 use Menu;
 
@@ -12,6 +13,7 @@ class SiteController extends Controller
     protected $slider_rep;
     protected $articles_rep;
     protected $menus_rep;
+    protected $categories_rep;
     protected $template;
 
     protected $vars = array();
@@ -32,6 +34,7 @@ class SiteController extends Controller
         $this->vars = array_add($this->vars, 'navigation', $navigation);
         return view($this->template)->with($this->vars);
     }
+
 
     protected function getMenu(){
         $menu = $this->menus_rep->get();

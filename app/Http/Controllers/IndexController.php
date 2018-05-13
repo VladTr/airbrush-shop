@@ -3,7 +3,9 @@
 namespace Shop\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Shop\Category;
 use Shop\Menu;
+use Shop\Repositories\CategoriesRepository;
 use Shop\Repositories\MenusRepository;
 use Shop\Repositories\SlidersRepository;
 use Shop\Slider;
@@ -12,12 +14,13 @@ use Config;
 class IndexController extends SiteController
 {
 
-    public function __construct(SlidersRepository $slider_rep)
+    public function __construct(SlidersRepository $slider_rep, CategoriesRepository $categories_rep)
     {
         parent::__construct(new MenusRepository(new Menu()));
         $this->template = env('THEME').'.index';
         $this->bar = 'right';
         $this->slider_rep = $slider_rep;
+        $this->categories_rep = $categories_rep;
     }
 
     /**
@@ -25,12 +28,20 @@ class IndexController extends SiteController
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
+    public function index() {
+        $categoriesItems = $this->getCategory();
+        $categories = view(env('THEME').'.categories')->with('categories', $categoriesItems)->render();
+        $this->vars = array_add($this->vars, 'categories', $categories);
+
         $sliderItems = $this->getSliders();
         $sliders = view(env('THEME').'.slider')->with('sliders', $sliderItems)->render();
         $this->vars = array_add($this->vars, 'sliders', $sliders);
         return $this->renderOutput();
+    }
+
+    protected function getCategory() {
+        $category = $this->categories_rep->get();
+        return $category;
     }
 
     private function getSliders(){
