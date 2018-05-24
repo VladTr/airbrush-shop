@@ -1,4 +1,4 @@
-@extends('theme.layouts.site')
+@extends('theme.layouts.site.blade-old.php')
 
 @section('content')
 <div class="container">

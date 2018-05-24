@@ -1,0 +1,22 @@
+.dropdown-menu{
+
+}
+
+ul.child li {
+    color: #0d3625;
+}
+
+.child{
+    top: 0;
+    left: 100%;
+}
+.dropdown-menu>.active>a {
+    color: black;
+    background-color: transparent;
+}
+
+.dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover{
+    color: white;
+    background-color: darkgray;
+}
+

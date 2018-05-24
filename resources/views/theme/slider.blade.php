@@ -10,7 +10,7 @@
                             @if($i%2 == 0)
                                 <div class="slide-content-holder-content" style="position: absolute; top:30px;right:650px;">
                                     <div class="slide-title">
-                                        <h2 style="color:#fff">CORPORATE, MULTIPURPOSE.. <br /><span>PINK RIO</span></h2>
+                                        <h2 style="color:#fff">CORPORATE, MULTIPURPOSE.. <br /><span>СЛАЙДЕР ПРО МАГАЗИН</span></h2>
                                     </div>
                                     <div class="slide-content" style="color:#fff">
                                         <p>Nam id quam a odio euismod pellentesque. Etiam congue rutrum risus non vestibulum. Quisque a diam at ligula blandit consequat. Mauris ac mi velit, a tempor neque</p>
@@ -20,7 +20,7 @@
                                 <div class="slide-content-holder inner" style="height:483px;">
                                     <div class="slide-content-holder-content" style="position: absolute; top:80px;left:500px;">
                                         <div class="slide-title">
-                                            <h2 style="color:#fff">PINKRIO. <span>STRONG AND POWERFUL.</span></h2>
+                                            <h2 style="color:#fff">PINKRIO. <span>СЛАЙДЕР ПРО АЄРОГРАФИЮ</span></h2>
                                         </div>
                                         <div class="slide-content" style="color:#fff">
                                             <p>Nam id quam a odio euismod pellentesque. Etiam congue rutrum risus non vestibulum. Quisque a diam at ligula blandit consequat. Mauris ac mi velit, a tempor neque</p>

@@ -17,4 +17,7 @@ Route::resource('/', 'IndexController', [
         'index'=>'home'
     ]
 ]);
+Route::get('/category/{id}', 'GoodController@index');
+
+/*Route::get('/category/{id}', 'IndexController@getGoodsByCategory');*/
 
