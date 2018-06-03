@@ -1,0 +1,2 @@
+<h3>Главная страница</h3>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi quo aspernatur quibusdam nostrum facere est ipsum expedita placeat, mollitia eligendi, amet repellendus sunt ipsam tenetur quidem vero alias dolorum provident.

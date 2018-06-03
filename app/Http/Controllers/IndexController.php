@@ -38,6 +38,9 @@ class IndexController extends SiteController
         $sliders = view(env('THEME').'.slider')->with('sliders', $sliderItems)->render();
         $this->vars = array_add($this->vars, 'sliders', $sliders);
 
+        $mainItems = 'some main';
+        $main = view(env('THEME').'.main')->with('main', $mainItems)->render();
+        $this->vars = array_add($this->vars, 'main', $main);
 
         return $this->renderOutput();
     }

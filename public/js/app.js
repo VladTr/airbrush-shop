@@ -990,7 +990,13 @@ window.Vue = __webpack_require__(35);
 Vue.component('example-component', __webpack_require__(38));
 
 var app = new Vue({
-  el: '#app'
+  el: '.goodItem',
+  mounted: function mounted() {},
+  methods: {
+    mouseOver: function mouseOver() {
+      alert('---');
+    }
+  }
 });
 
 /***/ }),

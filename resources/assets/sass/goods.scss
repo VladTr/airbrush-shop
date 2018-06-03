@@ -1,0 +1,12 @@
+.goodsList {
+    display: flex;
+    flex-direction: row;
+    .goodItem {
+        border: 2px solid green;
+        margin-left: 20px;
+        .photo{
+            width: 100px;
+            height: 170px;
+        }
+    }
+}

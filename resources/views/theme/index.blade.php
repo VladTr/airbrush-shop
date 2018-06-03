@@ -12,3 +12,7 @@
     {!! $categories !!}
 @endsection
 
+@section('main')
+    {!! $main !!}
+@endsection
+

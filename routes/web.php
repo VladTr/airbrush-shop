@@ -18,6 +18,6 @@ Route::resource('/', 'IndexController', [
     ]
 ]);
 Route::get('/category/{id}', 'GoodController@index');
+Route::get('/about', 'AboutController@index');
 
 /*Route::get('/category/{id}', 'IndexController@getGoodsByCategory');*/
-

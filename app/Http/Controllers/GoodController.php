@@ -14,7 +14,7 @@ class GoodController extends SiteController
     public function __construct()
     {
         parent::__construct(new MenusRepository(new Menu()));
-        $this->template = env('THEME').'.t';
+        $this->template = env('THEME').'.goods_template';
     }
 
     public function index($id){
@@ -24,27 +24,4 @@ class GoodController extends SiteController
         return $this->renderOutput();
     }
 
-    /*
-    protected function renderGoods ($id){
-        $goods = Category::find($id)->goods;
-        return view(env('THEME').'.goods')->with('goods',$goods)->render();
-    }
-    */
-
 }
-
-/*
- * if ($id) {
-            $goodsItems = Category::find($id)->goods;
-        } else {
-            $goodsItems = Good::all();
-        }
-
-        $goods =  view(env('THEME').'.goods')->with('goods',$goodsItems)->render();
-        $this->vars = array_add($this->vars, 'goods', $goods);
-
-   public function  getGoodsByCategory($id) {
-        $goodsItems = Category::find($id)->goods;
-        return view(env('THEME').'.goods')->with('goods',$goodsItems)->render();
-    }
- */

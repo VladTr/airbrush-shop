@@ -1,10 +1,40 @@
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+ul#menu.nav.navbar-nav > li.dropdown:hover a {
+  color: red !important;
+}
+
 ul#menu.nav.navbar-nav > li.dropdown:hover ul.dropdown-menu {
   display: block !important;
   background-color: #3097D1 !important;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
 }
 
 ul#menu.nav.navbar-nav > li.dropdown:hover ul.dropdown-menu li {
   background-color: #3097D1 !important;
+}
+
+ul#menu.nav.navbar-nav > li.dropdown:hover ul.dropdown-menu li a {
+  color: white !important;
 }
 
 ul#menu.nav.navbar-nav > li.dropdown:hover ul.dropdown-menu li:hover > a {
@@ -58,4 +88,24 @@ ul.child li {
     background-color: darkgray;
 }
 */
+
+.goodsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.goodsList .goodItem {
+  border: 2px solid green;
+  margin-left: 20px;
+}
+
+.goodsList .goodItem .photo {
+  width: 100px;
+  height: 170px;
+}
 
