@@ -1,9 +1,9 @@
-.dropdown-menu{
-
-}
-
 ul.child li {
     color: #0d3625;
+}
+
+#menu li:hover{
+    color:red
 }
 
 .child{

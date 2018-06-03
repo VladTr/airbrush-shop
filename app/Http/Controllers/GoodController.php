@@ -18,7 +18,6 @@ class GoodController extends SiteController
     }
 
     public function index($id){
-        echo ('hi '. $id);
         $goodsItems = Category::find($id)->goods;
         $goods = view(env('THEME').'.goods')->with('goods', $goodsItems)->render();
         $this->vars = array_add($this->vars, 'goods', $goods);
